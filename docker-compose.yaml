@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  datastudio:
+    image: heartexlabs/label-studio:latest
+    volumes:
+      - "./data:/label-studio/data"
+    ports:
+      - "50000:8080"
